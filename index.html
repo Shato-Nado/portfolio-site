@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Моё портфолио</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Шапка сайта -->
+  <header>
+    <div class="container">
+      <h1>Моё портфолио</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">Обо мне</a></li>
+          <li><a href="#projects">Проекты</a></li>
+          <li><a href="#reviews">Отзывы</a></li>
+          <li><a href="#calculator">Калькулятор</a></li>
+          <li><a href="#weather">Погода</a></li>
+          <li><a href="#contact">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Основное содержимое -->
+  <main>
+    <!-- Раздел "Обо мне" -->
+    <section id="about">
+      <div class="container">
+        <h2>Обо мне</h2>
+        <p>Привет! Меня зовут [Твоё имя], и я начинающий frontend-разработчик. Здесь ты найдёшь информацию о моих навыках и проектах.</p>
+      </div>
+    </section>
+
+    <!-- Раздел "Проекты" -->
+    <section id="projects">
+      <div class="container">
+        <h2>Мои проекты</h2>
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Проекты будут добавляться через JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Раздел "Отзывы" -->
+    <section id="reviews">
+      <div class="container">
+        <h2>Отзывы</h2>
+        <form id="reviewsForm">
+          <input type="text" id="name" placeholder="Ваше имя" required>
+          <textarea id="text" placeholder="Ваш отзыв" required></textarea>
+          <button type="submit">Отправить</button>
+        </form>
+        <div id="reviewsList"></div>
+      </div>
+    </section>
+
+    <!-- Раздел "Калькулятор" -->
+    <section id="calculator">
+      <div class="container">
+        <h2>Калькулятор</h2>
+        <div class="calculator">
+          <input type="text" id="display" disabled>
+          <div class="buttons" id="calculatorButtons">
+            <!-- Кнопки будут добавляться через JavaScript -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Раздел "Погода" -->
+    <section id="weather">
+      <div class="container">
+        <h2>Погода</h2>
+        <form id="weatherForm">
+          <input type="text" id="cityInput" placeholder="Введите город" required>
+          <button type="submit">Узнать погоду</button>
+        </form>
+        <div id="weatherResult"></div>
+      </div>
+    </section>
+
+    <!-- Раздел "Контакты" -->
+    <section id="contact">
+      <div class="container">
+        <h2>Контакты</h2>
+        <p>Свяжитесь со мной:</p>
+        <ul>
+          <li>Email: example@example.com</li>
+          <li>Телефон: +7 (123) 456-78-90</li>
+          <li>GitHub: <a href="https://github.com/твой-ник">твой-ник</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- Подвал сайта -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Моё портфолио</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
